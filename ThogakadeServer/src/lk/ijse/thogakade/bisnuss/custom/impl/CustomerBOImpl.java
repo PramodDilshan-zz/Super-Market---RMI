@@ -31,7 +31,7 @@ public class CustomerBOImpl implements CustomerBO {
     public boolean save(CustomerDTO t) throws Exception {
         customerDAO.setConnection(connection);
         boolean reselt = customerDAO.save(t);
-        connection.close();
+//        connection.close();
         return reselt;
     }
 
@@ -39,7 +39,7 @@ public class CustomerBOImpl implements CustomerBO {
     public boolean update(CustomerDTO t) throws Exception {
         customerDAO.setConnection(connection);
         boolean reselt = customerDAO.update(t);
-        connection.close();
+//        connection.close();
         return reselt;
 
     }
@@ -48,7 +48,7 @@ public class CustomerBOImpl implements CustomerBO {
     public boolean delete(String id) throws Exception {
         customerDAO.setConnection(connection);
         boolean reselt = customerDAO.delete(id);
-        connection.close();
+//        connection.close();
         return reselt;
     }
 
@@ -56,7 +56,7 @@ public class CustomerBOImpl implements CustomerBO {
     public CustomerDTO getbyId(String id) throws Exception {
         customerDAO.setConnection(connection);
         CustomerDTO customerDTO = customerDAO.getById(id);
-        connection.close();
+//        connection.close();
         return customerDTO;
     }
 
@@ -64,7 +64,7 @@ public class CustomerBOImpl implements CustomerBO {
     public ArrayList<CustomerDTO> get() throws Exception {
         customerDAO.setConnection(connection);
         ArrayList<CustomerDTO> allCustomers = customerDAO.get();
-        connection.close();
+//        connection.close();
         return allCustomers;
     }
 

@@ -31,7 +31,7 @@ public class ItemBOImpl implements ItemBO {
     public boolean save(ItemDTO t) throws Exception {
         itemDAO.setConnection(connection);
         boolean reselt = itemDAO.save(t);
-        connection.close();
+//        connection.close();
         return reselt;
     }
 
@@ -39,7 +39,7 @@ public class ItemBOImpl implements ItemBO {
     public boolean update(ItemDTO t) throws Exception {
         itemDAO.setConnection(connection);
         boolean reselt = itemDAO.update(t);
-        connection.close();
+//        connection.close();
         return reselt;
     }
 
@@ -47,7 +47,7 @@ public class ItemBOImpl implements ItemBO {
     public boolean delete(String id) throws Exception {
         itemDAO.setConnection(connection);
         boolean reselt = itemDAO.delete(id);
-        connection.close();
+//        connection.close();
         return reselt;
     }
 
@@ -55,7 +55,7 @@ public class ItemBOImpl implements ItemBO {
     public ItemDTO getbyId(String id) throws Exception {
         itemDAO.setConnection(connection);
         ItemDTO itemDTO = itemDAO.getById(id);
-        connection.close();
+//        connection.close();
         return itemDTO;
     }
 
@@ -63,7 +63,7 @@ public class ItemBOImpl implements ItemBO {
     public ArrayList<ItemDTO> get() throws Exception {
         itemDAO.setConnection(connection);
         ArrayList<ItemDTO> allitems = itemDAO.get();
-        connection.close();
+//        connection.close();
         return allitems;
     }
 
